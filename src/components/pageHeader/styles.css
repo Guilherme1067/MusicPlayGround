@@ -1,0 +1,55 @@
+ul{
+    list-style: none;
+}
+
+p{
+    
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.header-nav-description{
+    margin-right: 10px;
+}
+
+.header nav{
+    display: flex;
+    background:#74ffd1;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav  input{
+    background: transparent;
+    border-radius:13px;
+    width: 10vw;
+    height: 3.4vh;
+}
+.header-nav button{
+    background: transparent;
+    width: 9.0rem;
+    height: 2.0rem;
+    cursor: pointer;
+    border-radius: 13px;
+    border-color: rgb(58, 112, 58);;
+    color: rgb(58, 112, 58);
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s
+}
+
+.header-nav button:hover{
+    size: 10px;
+    color:white;
+    background: rgb(58, 112, 58);
+}
+.header-menu{
+
+}
+
+.playIcon{
+    width:1.2vw;
+    height: 2.8vh;
+}

@@ -1,0 +1,32 @@
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100vw;
+    height: 10vh;
+    background-color: #F5FFFA;
+}
+
+.description p{
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.albums > div{
+    flex: 0 1 200px;
+    margin:10px
+}
+.albums img {
+    width: 23vw;
+    height: 26vh;
+    border-radius:20px
+}
+
