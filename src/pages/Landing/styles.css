@@ -13,7 +13,6 @@
     font-size: 30px;
 }
 
-
 .albums {
     display: flex;
     flex-wrap: wrap;
@@ -28,5 +27,9 @@
     width: 23vw;
     height: 26vh;
     border-radius:20px
+}
+.albums img:hover{
+    width: 24vw;
+    height: 30vh;
 }
 
