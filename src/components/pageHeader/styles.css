@@ -3,10 +3,18 @@ ul{
 }
 
 p{
-    
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    font-family: 'Great Vibes', cursive;    
+    font-size: 40px;
+    transition: 1s;
+    color:#FF8C00;
 }
+
+p:hover{
+    transform: rotate(5deg);
+    cursor:default;
+    box-shadow: 10px 10px 10px 1px #FF4500;
+}
+
 
 .header-nav-description{
     margin-right: 10px;
@@ -27,23 +35,22 @@ p{
     height: 3.4vh;
 }
 .header-nav button{
-    background: transparent;
+    background: #FF8C00;
     width: 9.0rem;
     height: 2.0rem;
     cursor: pointer;
     border-radius: 13px;
-    border-color: rgb(58, 112, 58);;
-    color: rgb(58, 112, 58);
+    border-color:#FF8C00;
+    color: white;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     font-size: 14px;
-    transition: 0.2s
+    transition: 0.4s
 }
 
 .header-nav button:hover{
-    size: 10px;
     color:white;
-    background: rgb(58, 112, 58);
+    background: #FF4500;
 }
 .header-menu{
 
@@ -52,4 +59,5 @@ p{
 .playIcon{
     width:1.2vw;
     height: 2.8vh;
+    color:#FF4500
 }

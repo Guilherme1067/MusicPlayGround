@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import Header from '../../components/pageHeader'
 
@@ -12,12 +13,16 @@ import sidoka from '../../assets/images/sidokaLanguage.jpg'
 import youngThug from '../../assets/images/young-thug.jpg'
 import vintageCulture from '../../assets/images/vintage-culture.jpg'
 import vintageCultureAutumn from '../../assets/images/vintageAutumn.jpg'
+import trench from '../../assets/images/Trench.jpg'
+import uzi from '../../assets/images/uzi.png'
+
 
 
 
 import './styles.css'
 
 function Landing(){
+
     return (   
         <div>
             <h1>
@@ -27,11 +32,11 @@ function Landing(){
         <section className="albums">
 
             <div>
-                <img src={racionais} alt="racionais"/>
+                <img src={racionais}  alt="racionais"/>
             </div>
          
             <div>
-                <img src={theCarters} alt="the carters"/>
+                <img src={theCarters} alt="the carters" /> 
             </div>
             
             <div>
@@ -56,10 +61,21 @@ function Landing(){
                 <img src={vintageCultureAutumn} alt="Scorpion"/>
             </div>
             <div>
+                <Link to=""> 
                 <img src={youngThug} alt="Scorpion"/>
+                
+                </Link>
             </div>
             <div>
                 <img src={vintageCulture} alt="Scorpion"/>
+            </div>
+
+            <div> 
+                <img src={uzi} alt="lil-uzi-vert" />
+            </div>
+            
+            <div>
+                <img src={trench} alt="trench"/>
             </div>
             
         </section>      

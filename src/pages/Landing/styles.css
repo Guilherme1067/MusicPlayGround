@@ -26,10 +26,10 @@
 .albums img {
     width: 23vw;
     height: 26vh;
-    border-radius:20px
+    border-radius:20px;
+    transition: 0.4s
 }
 .albums img:hover{
     width: 24vw;
     height: 30vh;
 }
-
