@@ -6,13 +6,13 @@ p{
     font-family: 'Great Vibes', cursive;    
     font-size: 40px;
     transition: 1s;
-    color:#FF8C00;
+    color:#2F4F4F;
 }
 
 p:hover{
     transform: rotate(5deg);
     cursor:default;
-    box-shadow: 10px 10px 10px 1px #FF4500;
+    box-shadow: 10px 10px 10px 1px #2F4F4F	;
 }
 
 
@@ -35,12 +35,12 @@ p:hover{
     height: 3.4vh;
 }
 .header-nav button{
-    background: #FF8C00;
+    background: #5F9EA0	;
     width: 9.0rem;
     height: 2.0rem;
     cursor: pointer;
     border-radius: 13px;
-    border-color:#FF8C00;
+    border-color:#5F9EA0;
     color: white;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
@@ -50,7 +50,7 @@ p:hover{
 
 .header-nav button:hover{
     color:white;
-    background: #FF4500;
+    background: #2F4F4F	;
 }
 .header-menu{
 
