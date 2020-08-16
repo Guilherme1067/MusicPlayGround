@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
+import {Link, useParams} from 'react-router-dom';
 
 import Header from '../../components/pageHeader'
 
@@ -16,71 +16,77 @@ import vintageCultureAutumn from '../../assets/images/vintageAutumn.jpg'
 import trench from '../../assets/images/Trench.jpg'
 import uzi from '../../assets/images/uzi.png'
 
-
-
-
 import './styles.css'
+
+const albums = [{
+        id:1,
+        name:racionais,
+    },
+    {
+        id:2,
+        name:scorpion,
+    },
+    {
+        id:3,
+        name: noRoleModelz,
+    },
+    {
+        id:4,
+        name:Kendrick,
+    },
+    {
+        id:5,
+        name:rihannaAnti,
+    },
+    {
+        id:6,
+        name:theCarters,
+    },
+    {
+        id:7,
+        name:sidoka,
+    },
+    {
+        id:8,
+        name:youngThug,
+    },
+    {
+        id:9,
+        name:vintageCulture,
+    },
+    {
+        id:10,
+        name:vintageCultureAutumn,
+    },
+    {
+        id:11,
+        name:trench,
+    },
+    {
+        id:12,
+        name:uzi,
+    }
+]
+ 
 
 function Landing(){
 
-    return (   
-        <div>
-            <h1>
-                <Header />
-            </h1>
-
-        <section className="albums">
-
-            <div>
-                <img src={racionais}  alt="racionais"/>
-            </div>
-         
-            <div>
-                <img src={theCarters} alt="the carters" /> 
-            </div>
-            
-            <div>
-                <img src={noRoleModelz} alt="no role modelz"/>
-            </div>
-
-            <div>
-                <img src={Kendrick} alt="Kendrick"/>
-            </div>
-
-            <div>
-                <img src={rihannaAnti} alt="rihanna Anti"/>
-            </div>
-
-            <div>
-                <img src={scorpion} alt="Scorpion"/>
-            </div>
-            <div>
-                <img src={sidoka} alt="Scorpion"/>
-            </div>
-            <div>
-                <img src={vintageCultureAutumn} alt="Scorpion"/>
-            </div>
-            <div>
-                <Link to=""> 
-                <img src={youngThug} alt="Scorpion"/>
-                
-                </Link>
-            </div>
-            <div>
-                <img src={vintageCulture} alt="Scorpion"/>
-            </div>
-
-            <div> 
-                <img src={uzi} alt="lil-uzi-vert" />
-            </div>
-            
-            <div>
-                <img src={trench} alt="trench"/>
-            </div>
-            
-        </section>      
-        </div>
-    )
-}
+            return (   
+                <div>
+                    <h1>
+                        <Header />
+                    </h1>
+        
+                <section className="albums">
+                    {
+                        albums.map(album => {
+                        return <Link key={album.id} to={`/playlist${album.id}`}><div><img src={album.name} alt={album.name}></img></div></Link>
+                        })
+                    }
+                              
+                </section>      
+                </div>
+            )
+        }
 
 export default Landing;

@@ -24,9 +24,9 @@ video{
 
 }
 
-.albums > div{
+.albums div{
     flex: 0 1 200px;
-    margin:10px
+    margin:10px;
 }
 .albums img {
     width: 23vw;
@@ -38,3 +38,4 @@ video{
     width: 24vw;
     height: 30vh;
 }
+
